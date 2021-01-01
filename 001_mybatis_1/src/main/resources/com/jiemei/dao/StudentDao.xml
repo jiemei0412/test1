@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiemei.dao.StudentDao">
+
+    <!--    查  ；id属性表示dao接口的方法名；resultType表示返回值类型（增删改不需要设置返回值）-->
+    <select id="queryStudentById" resultType="com.jiemei.bean.Student">
+        select * from student where id=#{id}
+    </select>
+
+</mapper>
